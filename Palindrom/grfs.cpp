@@ -40,7 +40,9 @@ while (isSign(str1[left]))
 ++left;
 } 
 while (isSign(str1[right]))
-{
+{ 
+  if (right<=left)
+    break;
 --right; 
 } 
 
